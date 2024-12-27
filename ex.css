@@ -1,0 +1,72 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* Navigation Styles */
+  #navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+  }
+  
+  #navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 10px 0;
+  }
+  
+  #navbar ul li {
+    margin: 0 20px;
+  }
+  
+  #navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 15px;
+    display: block;
+    transition: color 0.3s ease;
+  }
+  
+  #navbar ul li a:hover {
+    color: #ff6347;
+  }
+  
+  /* Change Navbar Style When Scrolled */
+  .scrolled {
+    background-color: #222; /* Darker background when scrolled */
+  }
+  
+  /* Content Styles */
+  .content {
+    margin-top: 60px; /* Prevent content from being hidden under fixed navbar */
+  }
+  
+  .section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f0f0f0;
+    border: 1px solid #ccc;
+    text-align: center;
+    font-size: 24px;
+  }
+  
+  .section:nth-child(even) {
+    background: #e0e0e0;
+  }
+  
